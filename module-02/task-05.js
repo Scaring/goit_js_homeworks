@@ -15,6 +15,7 @@ const forbidden1 = 'spam';
 const forbidden2 = 'sale';
 
 const checkForSpam = function(str) {
+  console.log(str);
   let strArr = str.split(' ');
   //   console.log(strArr);
   let strArrCount = strArr.length;
