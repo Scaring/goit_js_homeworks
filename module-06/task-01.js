@@ -4,15 +4,18 @@ import users from './users.js';
 
 const getUserNames = users => {
   //Варіант-1
+  return users.map(user => user.name);
+
+  //Варіант-2
   //   const userNamesList = [];
   //   users.forEach(user => userNamesList.push(user.name));
   //   return userNamesList;
 
-  //Варіант-2
-  return users.reduce((userNamesList, user) => {
-    userNamesList.push(user.name);
-    return userNamesList;
-  }, []);
+  //Варіант-3
+  // return users.reduce((userNamesList, user) => {
+  //   userNamesList.push(user.name);
+  //   return userNamesList;
+  // }, []);
 };
 
 console.log(getUserNames(users));
